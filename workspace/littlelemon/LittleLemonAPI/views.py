@@ -11,6 +11,6 @@ class MenuItemView(generics.ListCreateAPIView):
     serializer_class = MenuItemSerializer
     
 class SingleMenuItemView(generics.RetrieveUpdateAPIView, generics.DestroyAPIView):
-    permission_classes = [IsAuthenticated]
+    #permission_classes = [IsAuthenticated]
     queryset = MenuItem.objects.all()
     serializer_class = MenuItemSerializer
